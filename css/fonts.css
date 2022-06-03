@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+:root, :host {
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free"; }
+  
+  @font-face {
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("../css/fonts/fa-solid-900.ttf") format("woff2"), url("../css/fonts/fa-solid-900.woff2") format("truetype"); }
+  
+  .fas,
+  .fa-solid {
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900; 
+    font-style: normal;
+  }
+
+  /* BARRAS DO MENU PARA DISPOSITIVOS MÓVEIS */
+  .fa-bars::before {
+    content: "\f0c9"; 
+  }
+
+  

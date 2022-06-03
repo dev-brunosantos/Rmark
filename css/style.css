@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 900px) and (max-width: 4000px) {
+    body {
+        min-width: 900px;
+        max-width: 5000px;
+        height: 100%;
+        margin: 0 auto;
+    }
+    
+    /* ----- CABEÇALHO DO SITE ----- */
+    i {
+        display: none;
+    }
+    header {
+        width: 100%;
+        min-height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: purple;
+        /* background-image: linear-gradient(65deg, #afafaf, purple, #340034); */
+    }
+    .logo {
+        width: 400px;
+        height: 150px;
+    }
+    nav {
+        display: none;
+    }
+    /* ___________________________ */
+    
+    /* ----- CONTEÚDO PRINCIPAL DO SITE */
+    main {
+        width: 100%;
+        min-height: 2000px;
+    }
+    .telas {
+        width: 100%;
+    }
+    /* PRIMEIRA SESSÃO */
+    #propaganda {
+        height: 515px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: purple;
+        /* background-image: linear-gradient(65deg, #afafaf, purple, #340034); */
+    }
+    h1.propaganda {
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 3px 0px 50px white;
+        width: 1100px;
+    }
+    h1.propaganda_informacao1 {
+        font-size: 40px;
+        text-shadow: 4px 0px 50px white;
+        text-align: center;
+        width: 1000px;
+    }
+    p.propaganda_informacao2 {
+        color: white;
+        font-size: 25px;
+        text-align: center;
+        width: 1200px;
+    }
+    /* ____________________________ */
+    
+    /* SEGUNDA SESSÃO */
+    
+    #video-formulario {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 600px;
+        text-align: center;
+        color: purple;
+        font-weight: bold;
+    }
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 90%;
+        margin-bottom: 25px;
+    }
+    .video, .formulario {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .video {
+        width: 60%;
+    }
+    .formulario {
+        width: 40%;
+    }
+    form {
+        width: 70%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        border: 10px double;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 0 auto;
+        background-image: linear-gradient(65deg, #afafaf, purple, #340034);
+        color: white;
+    }
+    .formulario h2 {
+        font-size: 30px;
+    }
+    .formulario a {
+        margin: 0 auto;
+        min-width: 250px;
+        max-width: 300px;
+        border: double white;
+        border-radius: 20px;
+        padding: 10px;
+        color: black;
+        font-weight: bold;
+        text-transform: uppercase;
+        /* text-shadow: 1px 1px white; */
+        background-color: rgba(180, 180, 180, 0.625);
+        animation: atencao 5s linear infinite;
+    }
+    @keyframes atencao {
+        0% {
+            transform: rotate(0deg);
+        }
+        25% {
+            transform: rotate(4deg);
+        }
+        50% {
+            transform: rotate(0deg);
+        }
+        75% {
+            transform: rotate(-4deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+    input[type=text], input[type=email] {
+        font-size: 18px;
+        text-align: center;
+        border: 1px solid transparent;
+        border-radius: 10px;
+    }
+    input[type=button] {
+        border: 1px solid transparent;
+        border-radius: 10px;
+        padding: 10px;
+        width: 150px;
+        margin: 0 auto;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    input:hover {
+        border: 1px solid;
+    }
+    input[type=button]:hover {
+        background-image: linear-gradient(65deg, #afafaf, purple, #340034);
+        border: 1px solid black;
+        color: white;
+    }
+    
+    video {
+        width: 70%;
+        height: 400px;
+        margin-top: -50px;
+    }
+    /* ____________________________ */
+    
+    /* TERCEIRA SESSÃO */
+    #varias-telas {
+        width: 100%;
+        height: 350px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        color: purple;
+        font-weight: bold;
+        text-shadow: 0px 0px 30px black;
+    }
+    .imagem, .varias_telas {
+        width: 30%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .imagem img {
+        /* width: 100%; */
+        min-width: 100px;
+        max-width: 400px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 50px #570057;
+    }
+    .varias_telas h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .varias_telas p {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .varias_telas_modelos {
+        width: 100%;
+        height: 140px;
+    }
+    table {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .modelos_de_telas {
+        width: 120px;
+        border: double transparent;
+        border-radius: 5px;
+        padding: 5px;
+        margin-left: 10px;
+        text-align: center;
+        list-style: none;
+    }
+    .modelos_de_telas:hover {
+        border: double ;
+        transition: 1s;
+    }
+    /* ____________________________ */
+    
+    /* QUARTA SESSÃO */
+    #teste_gratuito {
+        width: 100%;
+        height: 250px;
+        background-color: rgba(0, 0, 0, 0.721);
+        /* 
+        
+        background-image: url(../img/filems2.jpeg);
+        background-size: 100% 100%;
+        */
+        color: white;
+        text-align: center;
+        text-shadow: 0px 0px 10px purple;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #teste_gratuito div {
+        width: 100%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        z-index: 1;
+    }
+    #teste_gratuito div a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+        animation: atencao 10s linear infinite;
+    }
+    .fundo {
+        position: absolute;
+        width: 100%;
+        height: 250px;
+        top: 0;
+        left: 0;
+        opacity: 0.4;
+    }
+    /* ____________________________ */
+    
+    /* QUINTA SESSÃO */
+    #diferencial {
+        width: 100%;
+        height: 300px;
+        text-align: center;
+        background-color: white;
+    }
+    #diferencial h1 {
+        margin-top: 20px;
+        font-size: 30px;
+        color: purple;
+    }
+    .diferencial_imagens {
+        max-width: 160px;
+        height: 130px; 
+        cursor: pointer;
+        margin-top: 30px;
+        transform: rotateY(360deg);
+    }
+    .diferencial_imagens:hover {
+        animation: flip 500ms linear;
+    }
+    @keyframes flip {
+        0% {
+            transform: rotateY(360deg);
+        }
+        50% {
+            transform: rotateY(180deg);
+        }
+        100% {
+            transform: rotateY(0deg);
+        }
+    }
+    /* ____________________________ */
+    
+    /* ----- RODAPÉ ----- */
+    footer {
+        width: 100%;
+        height: 100px;
+        /* background-color: #d4d4d4b0; */
+        background-image: linear-gradient(to top, #9f9f9fb0, white );
+        /* border: 1px solid transparent; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        font-size: 15px;
+        font-style: italic;
+        font-weight: bold;
+        text-align: center;
+    }
+    footer a {
+        color: purple;
+        text-decoration: none;
+    }
+    
+    /* ____________________________ */
+}
+
